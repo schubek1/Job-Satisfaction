@@ -1,2 +1,2 @@
 # Job-Satisfaction
-factors that have an impact one's job satisfaction
+This study is for my Quantitative Sociology class at The College of New Jersey. The research done, evaluates the wide variety of factors, relating to an individual's characteristics or experiences, that can impact how satisfied they are within their job. All of these factors combine together in order to determine the responses in which individuals have for how satisfied they are with the work that they do for their career. When analyzing this data, I sought to find out which of these factors have the largest impact on this targeted dependent variable. 

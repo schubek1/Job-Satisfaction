@@ -253,34 +253,20 @@ chisq.test(table(my_dataset$satjob, my_dataset$degree)
 ###############################################################################################
 
 ##Model 1a
-model1 <- glm(satisfied ~ hs_or_less + assoc_or_more, data = my_dataset, family = binomial)
+model1 <- glm(satisfied ~ white + black + other_race + realinc, data = my_dataset, family = binomial)
 summary(model1)
 
 
 ##Model 2a
-model2 <- glm(satisfied ~ hs_or_less + assoc_or_more + male + non_male, data = my_dataset, family = binomial)
+model2 <- glm(satisfied ~ white + black + other_race + realinc + male + non_male + only_agree + only_disagree, data = my_dataset, family = binomial)
 summary(model2)
 
 ##Model 3a
-model3 <- glm(satisfied ~ hs_or_less + assoc_or_more + male + non_male + white + black + other_race, data = my_dataset, family = binomial)
+model3 <- glm(satisfied ~ white + black + other_race + realinc + male + non_male + only_agree + only_disagree + no_kids + yes_kids + hs_or_less + assoc_or_more, data = my_dataset, family = binomial)
 summary(model3)
 
+
 ##Model 4a
-model4 <- glm(satisfied ~ hs_or_less + assoc_or_more + male + non_male + white + black + other_race + no_kids + yes_kids, data = my_dataset, family = binomial)
+model4 <- glm(satisfied ~ white + black + other_race + realinc + male + non_male + only_agree + only_disagree + no_kids + yes_kids + hs_or_less + assoc_or_more + day_shift + other_shift + likely + not_likely, data = my_dataset, family = binomial)
 summary(model4)
 
-##Model 5a
-model5 <- glm(satisfied ~ hs_or_less + assoc_or_more + male + non_male + white + black + other_race + no_kids + yes_kids + day_shift + other_shift, data = my_dataset, family = binomial)
-summary(model5)
-
-##Model 6a
-model6 <- glm(satisfied ~ hs_or_less + assoc_or_more + male + non_male + white + black + other_race + no_kids + yes_kids + day_shift + other_shift + likely + not_likely, data = my_dataset, family = binomial)
-summary(model6)
-
-##Model 7a 
-model7 <- glm(satisfied ~ hs_or_less + assoc_or_more + male + non_male + white + black + other_race + no_kids + yes_kids + day_shift + other_shift + likely + not_likely + only_agree + only_disagree, data = my_dataset, family = binomial)
-summary(model7)
-
-##Model 8a 
-model8 <- glm(satisfied ~ hs_or_less + assoc_or_more + male + non_male + white + black + other_race + no_kids + yes_kids + day_shift + other_shift + likely + not_likely + only_agree + only_disagree + realinc, data = my_dataset, family = binomial)
-summary(model8)

@@ -1,9 +1,9 @@
 
 ## Project:  SOC 302 Final Multivariate 
-# Located:   FILL THIS OUT
-# File Name: FILL THIS OUT
-# Date:      FILL THIS OUT
-# Who:       FILL THIS OUT
+# Located:   TCNJ
+# File Name: schubert-job_satisfaction
+# Date:      May 14, 2024
+# Who:       Kristen Schubert
 
 
 ####################################################################################
